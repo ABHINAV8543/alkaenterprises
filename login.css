@@ -81,6 +81,9 @@ button:hover {
     font-size: 18px;
     height: 33px;
     }
+.map{
+    height: 360px;
+    }
 @media screen and (max-width: 600px){
     body{
         font-size: 12px;
