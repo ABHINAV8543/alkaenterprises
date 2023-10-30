@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Alka Enterprises</title>
+    <link rel="icon" href="https://images-platform.99static.com//jgs7605JcIwL0Pix4mcNWdMrx6w=/12x0:1977x1965/fit-in/590x590/99designs-contests-attachments/77/77101/attachment_77101076" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .hdg{
+        border: 7px double;
+        backdrop-filter: blur(50px);
+        text-align: center;
+        box-shadow: 10px 10px 10px 
+        }
+    body{
+        background-color: rgb(111, 221, 1);
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/130/489/289/the-sky-leaves-track-green-wallpaper-preview.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-size: 20px;
+        }
+    .box{
+        font-family: "Calibri";
+        align-self: center;
+        border: 4px double;
+        border-color: white;
+        border-radius: 20px;
+        color: rgb(255, 225, 0);
+        backdrop-filter: blur(2px);
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 22%;
+        font-weight: bold;
+        margin-left: auto;
+        margin-top: 50px;
+        margin-bottom: auto;
+        margin-right: auto;
+        }
+    .sbton{
+
+        align-content: center;
+        justify-content: center;
+        }
+    .adjmar{
+        height: 4px;
+        }
+    input{
+        background: transparent;
+        color: white
+        }
+    button {
+        display: inline-block;
+        background-color: #0084ff;
+        border-radius: 10px;
+        border: 2px double #cccccc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        padding: 2px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        }
+    button:hover {
+        background-color: #dddddd;
+        color: black;
+        }
+    .info{
+        backdrop-filter: blur(20px);
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-top: 100px;
+        }
+    .mp{
+        width: 100%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: 5px;
+        }
+    #ceye{
+        display:none;
+        }
+</style>
+<script type="text/javascript">
+    // function showMessage(){
+    //     alert("Unable to login, Website Under Development");
+    //     }
+    function show() {
+        var oeye = document.getElementById("oeye");
+        oeye.style.display="none"
+        var ceye = document.getElementById("ceye");
+        ceye.style.display="block"
+        var x = document.getElementById("pass");
+        if (x.type === "password") {
+            x.type = "text";
+            }
+        }
+    function hide() {
+        var oeye = document.getElementById("oeye");
+        oeye.style.display="block"
+        var ceye = document.getElementById("ceye");
+        ceye.style.display="none"
+        var x = document.getElementById("pass");
+        if (x.type === "text") {
+            x.type = "password";
+            }
+        }
+</script>
+<body>
+    <div class="hdg">
+        <h1 style="font-family: Arial Rounded MT Bold; word-spacing: 10px;"><u>Welcome to Alka Enterprises' Online Portal</u></h1>
+        <p style="color: red;"><marquee behaviour="scroll">To get your Coustomer ID and Password contact Admin/Owner. Visitor IDs are not being alloted as the feature is under development. In case of lost ID/password contact Admin/Owner.</marquee> </p>
+    </div>
+    <div class="box">
+    <form action="login.php" method="post">
+        <table align="center">
+            <tr class="adjmar"></tr>
+            <tr class="adjmar"></tr>
+            <tr>
+                <td colspan="3" align="center" style="color: cyan;">Enter Login Credentials</td>
+            </tr>
+            <tr class="adjmar"></tr>
+            <tr class="adjmar"></tr>
+            <tr class="adjmar"></tr>
+            <tr class="adjmar"></tr>
+            <tr>
+                <td><label for="utyp">User Type: </label></td>
+                <td><select name="utype" id="utyp" style="width: 100%; height: 25px; background: transparent; color: white;"><option value=0 style="background-color: black;">--Select--</option><option value="Admin" style="background-color: black;">Admin</option><option value="Customer" style="background-color: black;">Customer</option><option value="visitor" style="background-color: black;">Visitor</option></td>
+                <td></td>
+            </tr>
+            <tr class="adjmar"></tr>
+            <tr>
+                <td><label for="user">Username: </label></td>
+                <td><input type="text" name="uid" id="user" style="width: 100%; height: 22px; font-family: Bahnschrift;" required="" placeholder="UserID"></td>
+                <td></td>
+            </tr>
+            <tr class="adjmar"></tr>
+            <tr>
+                <td><label for="pass">Password:</label></td>
+                <td><input type="password" name="pwd" id="pass" style="width: 100%; height: 22px; font-family: Bahnschrift;" required="" placeholder="Password"></td>
+                <td align="left"><i class="fa fa-eye"style="color: white; margin-left: 10px;" onclick="show()" id="oeye"></i><i class="fa fa-eye-slash" style="color: white; margin-left: 10px;" onclick="hide()" id="ceye"></i></td>
+            </tr>
+            <tr class="adjmar"></tr>
+            <tr class="adjmar"></tr>
+            <tr>
+                <td colspan="3" align="center"><button type="submit" onClick="showMessage()" name="submit"><i class="fa fa-cogs" style="font-size: 18px;"></i> Login</button></td>
+            </tr>
+            <tr style="height: 4px;"></tr>
+        </table>
+    </form>
+    </div>
+    <div class="info">
+        <table>
+            <tr style="height: 5px;"></tr>
+        </table>
+        <div style="align-self: center;"><p style="text-align: center; margin-top: 25px;">
+            <button onclick="window.location.href='home.html'" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; width: 200px; height: 33px;"><i class="fa fa-home"></i> Go to Home Page</a></p></div>
+        <hr style="color: white;">   
+        <div class="mp">
+            <h4 style="color: white; font-weight: 100; font-weight: bold;"><i class="fa fa-map-marker"></i> <u>HOW TO REACH:</u></h4>
+            <table style="width: 100%;" align="right">
+                <tr>
+                    <td style="width: 35%;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5069.177808303202!2d82.68312937656637!3d26.05154585041611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39905b2957ead53f%3A0x80893ae1817f2624!2sALKA%20ENTERPRISES!5e0!3m2!1sen!2sin!4v1697895226919!5m2!1sen!2sin" width="100%" height="350px" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </td>
+                    <td style="width: 2%;"></td>
+                    <td style="vertical-align: top;">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; color: white;"><u>Address:</u></td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;">Alka Enterprises, Shahpanja, Shahganj,</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;">District-Jaunpur, Uttar Pradesh,</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;">Pin Code: 223101</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/383px-Flag_of_India.svg.png" style="height: 18px; width:24px; vertical-align:text-bottom;"> India</td>
+                            </tr>
+                            <tr style="height: 35px;"></tr>
+                            <tr>
+                                <td style="font-weight: bold; color: white;"><u>Contact Us:</u></td>
+                            </tr>
+                            
+                            <tr>
+                                <td style="color: white;">Email: <i class="fa fa-envelope"></i> alkaenterprisesshg@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;">Mobile No.: <i class="fa fa-phone"></i> 9838266150, <i class="fa fa-phone"></i> 9918156168</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 5%;"></td>
+                    <td style="vertical-align: top;">
+                        <table>
+                            <tr>
+                                <td style="font-weight: bold; color: white;"><i class="fa fa-institution"></i> <u>BANK DETAILS:</u></td>
+                            </tr>
+                            <tr style="height: 10px;"></tr>
+                            <tr>
+                                <td style="color: white; font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">PUNJAB NATIONAL BANK, SHAHGANJ</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;">A/c No.: 4504008700001124</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;">IFSC CODE- PUNB0450400</td>
+                            </tr>
+                            <tr style="height: 20px;"></tr>
+                            <tr>
+                                <td style="color: white; font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">UNION BANK OF INDIA, SHAHGANJ MAIN</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;">A/c No.: 347101010011090</td>
+                            </tr>
+                            <tr>
+                                <td style="color: white;">IFSC CODE- UBIN0534714</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </table>
+            <table>
+               <tr style="height: 10px;"></tr>
+            </table>
+            <p align="center" style="color: white; font-size: small;">Copyright © 2023 - All Right Reserved.</p>
+            <!--Content Owned and Managed by Alka Enterprises-->
+            <table>
+               <tr style="height: 10px;"></tr>
+            </table>
+        </div> 
+    <hr style="color: white;">
+    <table>
+        <tr style="height: 10px;"></tr>
+    </table>
+</div>
+</body>
+</html>
