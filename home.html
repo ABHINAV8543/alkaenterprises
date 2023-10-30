@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Alka Enterprises</title>
     <link rel="icon" href="https://images-platform.99static.com//jgs7605JcIwL0Pix4mcNWdMrx6w=/12x0:1977x1965/fit-in/590x590/99designs-contests-attachments/77/77101/attachment_77101076" type="image/x-icon">
@@ -15,10 +15,16 @@
         background-repeat: no-repeat;
         font-size: 20px;
         }
+    h1{
+        font-size: 70px;
+        }
     .info{
         backdrop-filter: blur(20px);
         background-color: rgba(0, 0, 0, 0.7);
         margin-top: 100px;
+        }
+    .ttl{
+        height: 150px;
         }
     .mp{
         width: 100%;
@@ -68,6 +74,54 @@
         backdrop-filter: blur(5px);
         background-color: rgba(0, 0, 0, 0.4);
         }
+    .map{
+        height: 360px;
+        }
+    .btn{
+        margin-top: 25px;
+        }
+    .navup{
+        width: 150px;
+        height: 33px;
+        }
+    .cpyr{
+        font-size: small;
+        }
+    @media screen and (max-width:600px){
+        body{
+            font-size: 12px;
+        }
+        h1{
+            font-size: 32px;
+        }
+        button{
+            font-size: 12px;
+            width: 50px;
+        }
+        .info{
+            margin-top: 15px;
+        }
+        .map{
+            height: 300px;
+        }
+        .topnav a{
+            padding: 8px 10px;
+            font-size: 12px;
+        }
+        .ttl{
+            height: 70px;
+        }
+        .btn{
+            margin-top: 8px;
+        }
+        .navup{
+            width: 100px;
+            height: 22px;
+        }
+        .cpyr{
+            font-size: 8px;
+        }
+        }
 </style>
 <script type="text/javascript">
     function webudrdev(){
@@ -81,8 +135,8 @@
         <a href="#con"><i class="fa fa-address-book-o"></i> Contact Us</a>
         <a href="" onclick="webudrdev()"><i class="fa fa-info-circle"></i> About</a>
     </div>
-    <div style="height: 150px;">
-        <h1 style="font-family: Copperplate Gothic Light; font-size: 70px; vertical-align:middle; margin-bottom: 0px;" align="center">ALKA ENTERPRISES</h1>
+    <div class="ttl">
+        <h1 style="font-family: Copperplate Gothic Light; vertical-align:middle; margin-bottom: 0px;" align="center">ALKA ENTERPRISES</h1>
         <p style="color: rgb(0, 92, 0); font-weight: bold;" align="center">TEA MERCHANT AND COMMISSION AGENT</p>
     </div>
     <hr style="color: black; height: 4px; background-color: black; margin-top: 0px;">
@@ -95,15 +149,15 @@
         <table>
             <tr style="height: 5px;"></tr>
         </table>
-        <div style="align-self: center;"><p style="text-align: center; margin-top: 25px;">
-            <button onclick="window.location.href='#menu'" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; width: 150px; height: 33px;"><i class="fa fa-toggle-up"></i> Back to Top</a></p></div>
+        <div style="align-self: center;"><p style="text-align: center;" class="btn">
+            <button class="navup" onclick="window.location.href='#menu'" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><i class="fa fa-toggle-up"></i> Back to Top</a></p></div>
         <hr style="color: white;">   
         <div class="mp">
             <h4 style="color: white; font-weight: 100; font-weight: bold;"><i class="fa fa-map-marker"></i>  <u>HOW TO REACH:</u></h4>
             <table style="width: 100%;" align="right">
                 <tr>
                     <td style="width: 35%;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5069.177808303202!2d82.68312937656637!3d26.05154585041611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39905b2957ead53f%3A0x80893ae1817f2624!2sALKA%20ENTERPRISES!5e0!3m2!1sen!2sin!4v1697895226919!5m2!1sen!2sin" width="100%" height="350px" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5069.177808303202!2d82.68312937656637!3d26.05154585041611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39905b2957ead53f%3A0x80893ae1817f2624!2sALKA%20ENTERPRISES!5e0!3m2!1sen!2sin!4v1697895226919!5m2!1sen!2sin" width="100%" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
                     </td>
                     <td style="width: 2%;"></td>
                     <td style="vertical-align: top;">
@@ -169,7 +223,7 @@
             <table>
                <tr style="height: 10px;"></tr>
             </table>
-            <p align="center" style="color: white; font-size: small;">Copyright © 2023 - All Right Reserved.</p>
+            <p align="center" style="color: white;" class="cpyr">Copyright © 2023 - All Right Reserved.</p>
             <!--Content Owned and Managed by Alka Enterprises-->
             <table>
                <tr style="height: 10px;"></tr>
